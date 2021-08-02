@@ -225,10 +225,42 @@ body{
     }
 }
 @media only screen and (max-width: 350px) {
+    :root{
+        font-size: 14px;
+    }
     body{
         .open-it{
             height: 10vh !important;
             opacity: 1;
+        }
+    }
+}
+@media only screen and (max-width: 300px) {
+    body{
+        .landing-area{
+            height: 60vh;
+            .container{
+                h1{
+                    font-size: 1.75rem !important;
+                }
+                h2{
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 250px) {
+    body{
+        .landing-area{
+            .container{
+                h1{
+                    font-size: 1.5rem !important;
+                }
+                h2{
+                    font-size: 1rem !important;
+                }
+            }
         }
     }
 }
