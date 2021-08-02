@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  font-size: 20px;
+}
+
+body {
+  background: #272727;
+}
+body nav {
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body nav .logo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body nav .logo a {
+  color: white;
+  text-decoration: none;
+}
+body nav .logo a span.logo-part {
+  font-weight: bolder;
+}
+body nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10%;
+  width: 50%;
+}
+body nav .menu span.burger {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+body nav .menu span.burger span.lines {
+  background: white;
+  width: 90%;
+  height: 15%;
+}
+body nav .menu span.burger:hover {
+  cursor: pointer;
+}
+body .links {
+  overflow: hidden;
+  height: 0vh;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gowun Dodum", sans-serif;
+  transition: 0.35s cubic-bezier(0.35, 0.15, 0.81, 0.99);
+}
+body .links ul {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+body .links ul li {
+  list-style-type: none;
+}
+body .links ul li a {
+  transition: 0.2s ease-in-out;
+  color: white;
+  text-decoration: none;
+}
+body .links a:hover {
+  color: #969696;
+}
+body .open-it {
+  height: 15vh;
+  opacity: 1;
+}
+body .landing-area {
+  height: 80vh;
+  width: 100vw;
+  max-width: 100vw;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .landing-area .container {
+  position: absolute;
+  height: 30vw;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+body .landing-area .container h1 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: lighter;
+  align-self: flex-end;
+}
+body .landing-area .container h1 span.cursive {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 3px;
+  font-weight: bold !important;
+}
+body .landing-area .container h2 {
+  font-size: 1.65rem;
+  color: #f76d6d;
+}
+body footer {
+  height: 30vh;
+  background: #2e2e2e;
+  display: flex;
+  position: relative;
+}
+body footer ul {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  font-family: "Gowun Dodum", sans-serif;
+  align-self: center;
+  padding-left: 10%;
+}
+body footer ul li {
+  list-style-type: none;
+}
+body footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  body .landing-area .container h1 {
+    font-size: 2.25rem;
+  }
+  body .landing-area .container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body .links ul {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body nav .menu {
+    padding-right: 0%;
+  }
+  body .links ul {
+    width: 80%;
+    justify-items: center;
+  }
+  body .landing-area .container h1 {
+    font-size: 2rem !important;
+  }
+  body .landing-area .container h2 {
+    font-size: 1.35rem !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  :root {
+    font-size: 16px;
+  }
+
+  body .links ul {
+    width: 95%;
+    justify-items: center;
+  }
+  body .landing-area {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 350px) {
+  body .open-it {
+    height: 10vh !important;
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
